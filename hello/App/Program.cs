@@ -1,19 +1,19 @@
 ﻿using System;
 
-var conference = "That";
-Console.WriteLine($"Hello {conference} Conference!");
+var group = "Wisconsin .Net";
+Console.WriteLine($"Hello {group} User Group!");
 
 Action<string> sorry =
-  conference => Console.WriteLine(
-    $"Sorry, {conference} this is a bit ridiculous.");
+  x => Console.WriteLine(
+    $"Sorry, {x} this is a bit ridiculous.");
 
-sorry(conference);
+sorry("everyone");
 Closing("fun");
 
 static void Closing(string state)
   => Console.WriteLine($"Hope you find it {state}!");
 /*
-Hello That Conference!
-Sorry, That this is a bit ridiculous.
+Hello Wisconsin .Net User Group!
+Sorry, everyone this is a bit ridiculous.
 Hope you find it fun!
  */
